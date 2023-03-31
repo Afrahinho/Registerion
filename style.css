@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+}
+.container {
+  background-color: rgb(175, 206, 207);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  width: 400px;
+}
+.container h1 {
+  text-align: center;
+  margin: 10px;
+}
+.form {
+  padding: 30px 40px;
+}
+.form-contorl {
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.form-contorl label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-contorl input {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #a7a1a7;
+}
+.form-contorl i.fa-check {
+  position: absolute;
+  text-align: right;
+  color: #31ca15;
+  top: 35px;
+  bottom: 0;
+  right: 10px;
+  visibility: hidden;
+}
+.form-contorl i.fa-close {
+  position: absolute;
+  text-align: right;
+  color: #ac5a36;
+  top: 35px;
+  bottom: 0;
+  right: 10px;
+  visibility: hidden;
+}
+.form-contorl input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+.form-contorl small {
+  display: block;
+  color: red;
+  visibility: hidden;
+}
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #ff7e33;
+  border: 1px solid #ff7e33;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  outline: none;
+}
+.form-contorl.success input {
+  border: 1px solid #31ca15;
+}
+.form-contorl.error input {
+  border: 1px solid red;
+}
+.form-contorl.error small {
+  visibility: visible;
+}
